@@ -52,4 +52,5 @@ jobs:
       - name: Run Tests
         env:
           SECRET_KEY: "ci-dummy-key"
+          ALLOWED_HOSTS: "localhost"
         run: uv run python manage.py test
